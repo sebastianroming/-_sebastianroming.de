@@ -1,0 +1,11 @@
+/* TEAM */
+	Master-in-Chief: Sebastian Roming
+	Contact: sebastian.roming [at] googlemail.com
+	Twitter: @sebastianroming
+	From: Dunningen, Germany
+
+/* SITE */
+	Last update: 2011/06/09
+	Language: English
+	Doctype: HTML5 with CSS3
+	IDE: Aptana Studio 3

@@ -1,0 +1,21 @@
+/**
+ * Thank you for viewing my sourcecode.
+ * 
+ * @author Sebastian Roming
+ */
+
+#contact {
+ 	filter: alpha(opacity = 50);
+}
+
+.clear {
+	clear:none;
+}
+
+#main {
+ 	filter: alpha(opacity = 50);
+}
+
+	#main #inner {
+		filter: alpha(opacity = 100);
+	}

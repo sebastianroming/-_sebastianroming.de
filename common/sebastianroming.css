@@ -1,0 +1,223 @@
+/**
+ * Thank you for viewing my sourcecode.
+ * Do you like it? Great, I like it too.
+ *	
+ * Please +1 my website at the top right of this page.
+ *	
+ * If you want to donate my work, you can either donate via paypal,
+ * or you can spend me a beer at the next barcamp (or DevCamp, ...).
+ * Just leave me a note (see humans.txt!)
+ * 
+ * Thanks!
+ * 
+ * THIS SOURCE CODE IS LICENSED UNDER THE 
+ * 		
+ * 		CREATIVE COMMONS ATTRIBUTION-NONCOMMERCIAL-SHAREALIKE 3.0 UNPORTED LICENSE
+ * 		(CC-BY-NC-SA, http://creativecommons.org/licenses/by-nc-sa/3.0/)
+ * 
+ * PLEASE RESPECT THE COPYRIGHT.
+ * 
+ * 
+ * @author Sebastian Roming
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+
+html {
+	height:100%;
+}
+
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+	background-image:url(../common/background-2.jpg);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	background-attachment:fixed;
+	font-size:0.9em;
+	font-family:Helvetica, Arial, Verdana, sans-serif;
+}
+
+h1,
+h2 {
+	text-transform:uppercase;
+	font-size:4em;
+	font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif;
+	color:#000;
+	margin:0;
+	font-weight:normal;
+	letter-spacing:-0.05em;
+}
+
+h2 {
+	margin:-20px 0 0 0;
+}
+
+a {
+	color:#5B5B5B;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+.clear {
+	clear:both;
+}
+
+#contact {
+	width:500px;
+	height:200px;
+	background-color:#FFF;
+	z-index:9999;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin:0 auto 0 -275px;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+	-moz-border-radius-bottomleft:25px;
+	-moz-border-radius-bottomright:25px;
+	opacity:0.5;
+	display:none;
+	padding:40px 25px;
+}
+
+	#contactForm {
+		margin:20px 0 0 0;
+	}
+
+		#contactForm .contact-container {
+			margin:0 0 3px 0;
+		} 
+		
+		#contactForm .contact-container-label {
+			float:left;
+			width:150px;
+			padding:2px 0 0 0;
+		} 
+		
+		#contactForm .contact-container-errorLabel {
+			color:#FF0000;
+		}
+		
+		#contactForm .contact-container-main {
+			float:left;
+		} 
+		
+			#contactForm .contact-container-main input,
+			#contactForm .contact-container-main textarea {
+				border:1px #000 solid;
+				padding:2px;
+				width:250px;
+			} 
+			
+			#contactForm .contact-container-main input[type='button'] {
+				width:75px;
+				cursor:pointer;
+			}
+
+#main {
+	width:300px;
+	margin:0 0 0 250px;
+	height:100%;
+	background-color:#CECECE;
+	opacity: 0.5;
+	-moz-opacity:0.5;
+	z-index:1;
+}
+
+	#main #inner {
+		margin:0 auto;
+		background-color:transparent;
+		opacity:1;
+		-moz-opacity:1;
+		padding:25px;
+	}
+		
+		#subtitle {
+			margin:10px 0 0 0;
+		}
+
+		#social-networks {
+			margin:50px 0 0 0;
+		}
+		
+			#social-networks #iolive {
+				margin:35px 73px;
+			}
+		
+			#social-networks ul {
+				margin:0;
+				padding:0;
+			}
+			
+				#social-networks ul li {
+					list-style:none;
+					height:16px;
+					margin:5px 0 0 0;
+					padding:1px 0 0 20px;
+					background-repeat:no-repeat;
+					background-position:0 0;
+					opacity:1;
+					z-index:990;
+				}
+				
+					#social-networks ul li.google {
+						z-index:991;
+						background-image:url(../common/icons/google.png);
+					}
+				
+					#social-networks ul li.twitter {
+						z-index:992;
+						background-image:url(../common/icons/twitter.png);
+					}
+				
+					#social-networks ul li.facebook {
+						z-index:993;
+						background-image:url(../common/icons/facebook.png);
+					}
+				
+					#social-networks ul li.xing {
+						z-index:994;
+						background-image:url(../common/icons/xing.png);
+					}
+				
+					#social-networks ul li.linkedin {
+						z-index:995;
+						background-image:url(../common/icons/linkedin.png);
+					}
+				
+					#social-networks ul li.picasa {
+						z-index:996;
+						background-image:url(../common/icons/picasa.png);
+					}
+				
+					#social-networks ul li.blogger {
+						z-index:997;
+						background-image:url(../common/icons/blogger.png);
+					}
+				
+					#social-networks ul li.github {
+						z-index:998;
+						background-image:url(../common/icons/github.png);
+					}
+					
+					#social-networks ul li.plusone {
+						position:absolute;
+						bottom:150px;
+						padding-left:0;
+						background-image:none;
+						/*margin-top:55px;*/
+					}
+
+#plusone {
+	position:absolute;
+	top:5px;
+	right:5px;
+	/*background-color:#fff;*/
+	padding:15px 0 15px 15px;
+}
