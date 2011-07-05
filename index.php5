@@ -41,6 +41,7 @@ header('Content-Type: text/html; charset=utf-8');
 			<![endif]>
 			
 		<![endif]-->
+		
 	</head>
 	
 	<body>
@@ -60,9 +61,9 @@ header('Content-Type: text/html; charset=utf-8');
 					<ul>
 						<li class='blogger'><a href='http://blog.sebastianroming.de/' rel='external'>Blog</a></li>
 						<li class='google'><a href='http://profiles.google.com/sebastian.roming' rel='external'>Google</a></li>
+						<li class='googleplus'><a href='http://gplus.to/basti' rel='external'>Google+</a></li>
 						<li class='twitter'><a href='http://twitter.com/sebastianroming' rel='external'>Twitter</a></li>
 						<li class='facebook'><a href='http://www.facebook.com/sebastian.roming' rel='external'>Facebook</a></li>
-						<li class='googleplus'><a href='http://gplus.to/basti' rel='external'>Google+</a></li>
 						<li class='xing'><a href='http://www.xing.com/profile/Sebastian_Roming' rel='external'>XING</a></li>
 						<li class='picasa'><a href='http://picasaweb.google.com/sebastian.roming' rel='external'>Picasa</a></li>
 					</ul>
