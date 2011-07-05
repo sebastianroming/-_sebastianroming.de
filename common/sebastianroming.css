@@ -205,6 +205,11 @@ a:hover {
 						z-index:998;
 						background-image:url(../common/icons/github.png);
 					}
+				
+					#social-networks ul li.googleplus {
+						z-index:999;
+						background-image:url(../common/icons/googleplus.png);
+					}
 					
 					#social-networks ul li.plusone {
 						position:absolute;
