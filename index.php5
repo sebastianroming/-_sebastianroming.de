@@ -27,9 +27,10 @@ header('Content-Type: text/html; charset=utf-8');
 	<head>
 		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 		<title>sebastianroming.de</title>
+		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' />
+		<link rel='stylesheet' type='text/css' href='./common/sebastianroming.css?<?php echo time(); ?>' />
 		<script type='text/javascript' src='https://apis.google.com/js/plusone.js'></script>
 		<link type='text/plain' rel='author' href='http://www.sebastianroming.de/humans.txt' />
-		<link rel='stylesheet' type='text/css' href='./common/sebastianroming.css?<?php echo time(); ?>' />
 		<link rel='icon' href='./common/favicon.ico' type='image/vnd.microsoft.icon' />
 		
 		<!--[if IE]>

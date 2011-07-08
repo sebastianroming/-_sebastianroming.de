@@ -21,8 +21,6 @@
  * @author Sebastian Roming
  */
 
-@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-
 html {
 	height:100%;
 }
@@ -157,33 +155,34 @@ a:hover {
 			
 				#social-networks ul li {
 					list-style:none;
-					height:16px;
+					height:15px;
 					margin:5px 0 0 0;
 					padding:1px 0 0 20px;
 					background-repeat:no-repeat;
 					background-position:0 0;
 					opacity:1;
 					z-index:990;
+					background-image:url(../common/icons.png);
 				}
 				
 					#social-networks ul li.google {
 						z-index:991;
-						background-image:url(../common/icons/google.png);
+						background-position:0 -48px;
 					}
 				
 					#social-networks ul li.twitter {
 						z-index:992;
-						background-image:url(../common/icons/twitter.png);
+						background-position:0 0;
 					}
 				
 					#social-networks ul li.facebook {
 						z-index:993;
-						background-image:url(../common/icons/facebook.png);
+						background-position:0 -64px;
 					}
 				
 					#social-networks ul li.xing {
 						z-index:994;
-						background-image:url(../common/icons/xing.png);
+						background-position:0 -80px;
 					}
 				
 					#social-networks ul li.linkedin {
@@ -193,12 +192,12 @@ a:hover {
 				
 					#social-networks ul li.picasa {
 						z-index:996;
-						background-image:url(../common/icons/picasa.png);
+						background-position:0 -16px;
 					}
 				
 					#social-networks ul li.blogger {
 						z-index:997;
-						background-image:url(../common/icons/blogger.png);
+						background-position:0 -96px;
 					}
 				
 					#social-networks ul li.github {
@@ -208,7 +207,7 @@ a:hover {
 				
 					#social-networks ul li.googleplus {
 						z-index:999;
-						background-image:url(../common/icons/googleplus.png);
+						background-position:0 -32px;
 					}
 					
 					#social-networks ul li.plusone {
