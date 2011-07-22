@@ -5,7 +5,7 @@ $jsonFileIsReadable = false;
 
 if (file_exists('./social-networks.json') && is_readable('./social-networks.json')) {
 	
-	$jsonFileIsReadable = false;
+	$jsonFileIsReadable = true;
 	
 	$fileContent = file_get_contents('./social-networks.json');
 	$socialNetworks = json_decode($fileContent);
