@@ -210,6 +210,10 @@ a:hover {
 						background-position:0 -32px;
 					}
 					
+					#social-networks ul li.monkey {
+						background:none;
+					}
+					
 					#social-networks ul li.plusone {
 						position:absolute;
 						bottom:150px;

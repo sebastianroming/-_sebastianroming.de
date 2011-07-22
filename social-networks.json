@@ -1,0 +1,32 @@
+[
+		{
+			"title": 		"Blog",
+			"url":			"http://blog.sebastianroming.de",
+			"css_class":	"blogger"
+		},
+		{
+			"title": 		"Google+",
+			"url":			"http://profiles.google.com/sebastian.roming",
+			"css_class":	"googleplus"
+		},
+		{
+			"title": 		"Twitter",
+			"url":			"http://twitter.com/sebastianroming",
+			"css_class":	"twitter"
+		},
+		{
+			"title": 		"Facebook",
+			"url":			"http://www.facebook.com/sebastian.roming",
+			"css_class":	"facebook"
+		},
+		{
+			"title": 		"XING",
+			"url":			"http://www.xing.com/profile/Sebastian_Roming",
+			"css_class":	"xing"
+		},
+		{
+			"title": 		"Picasa",
+			"url":			"http://picasaweb.google.com/sebastian.roming",
+			"css_class":	"picasa"
+		}
+]

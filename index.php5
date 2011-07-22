@@ -1,5 +1,17 @@
 <?php 
 header('Content-Type: text/html; charset=utf-8');
+
+$jsonFileIsReadable = false;
+
+if (file_exists('./social-networks.json') && is_readable('./social-networks.json')) {
+	
+	$jsonFileIsReadable = false;
+	
+	$fileContent = file_get_contents('./social-networks.json');
+	$socialNetworks = json_decode($fileContent);
+	
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,7 +43,7 @@ header('Content-Type: text/html; charset=utf-8');
 		<link rel='stylesheet' type='text/css' href='./common/sebastianroming.css?<?php echo time(); ?>' />
 		<script type='text/javascript' src='https://apis.google.com/js/plusone.js'></script>
 		<link type='text/plain' rel='author' href='http://www.sebastianroming.de/humans.txt' />
-		<link rel='icon' href='./common/favicon.ico' type='image/vnd.microsoft.icon' />
+		<link rel='shortcut icon' href='./common/favicon.ico' type='image/x-icon' />
 		
 		<!--[if IE]>
 			<link rel='shortcut icon' href='./common/favicon.ico' type='image/vnd.microsoft.icon' />
@@ -60,13 +72,25 @@ header('Content-Type: text/html; charset=utf-8');
 				</div>
 				<div id='social-networks'>
 					<ul>
-						<li class='blogger'><a href='http://blog.sebastianroming.de/' rel='external'>Blog</a></li>
-						<li class='google'><a href='http://profiles.google.com/sebastian.roming' rel='external'>Google</a></li>
-						<li class='googleplus'><a href='http://profiles.google.com/sebastian.roming' rel='external'>Google+</a></li>
-						<li class='twitter'><a href='http://twitter.com/sebastianroming' rel='external'>Twitter</a></li>
-						<li class='facebook'><a href='http://www.facebook.com/sebastian.roming' rel='external'>Facebook</a></li>
-						<li class='xing'><a href='http://www.xing.com/profile/Sebastian_Roming' rel='external'>XING</a></li>
-						<li class='picasa'><a href='http://picasaweb.google.com/sebastian.roming' rel='external'>Picasa</a></li>
+						<?php 
+						if ($jsonFileIsReadable === true) {
+							
+							foreach ($socialNetworks as $socialNetwork) {
+								
+								echo "<li class='" . $socialNetwork->css_class . "'><a href='" . $socialNetwork->url . "' rel='external'>" . $socialNetwork->title . "</a></li>";
+								
+							}
+							
+						} else {
+							
+							/**
+							 * Fallback
+							 */
+							
+							echo "<li class='monkey'>Sorry, something went wrong :(</li>";
+							
+						}
+						?>
 					</ul>
 				</div>
 			</div>
