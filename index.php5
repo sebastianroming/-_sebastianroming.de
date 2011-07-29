@@ -41,7 +41,6 @@ if (file_exists('./social-networks.json') && is_readable('./social-networks.json
 		<title>sebastianroming.de</title>
 		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' />
 		<link rel='stylesheet' type='text/css' href='./common/sebastianroming.css?<?php echo time(); ?>' />
-		<script type='text/javascript' src='https://apis.google.com/js/plusone.js'></script>
 		<link type='text/plain' rel='author' href='http://www.sebastianroming.de/humans.txt' />
 		<link rel='shortcut icon' href='./common/favicon.ico' type='image/x-icon' />
 		
@@ -77,7 +76,7 @@ if (file_exists('./social-networks.json') && is_readable('./social-networks.json
 							
 							foreach ($socialNetworks as $socialNetwork) {
 								
-								echo "<li class='" . $socialNetwork->css_class . "'><a href='" . $socialNetwork->url . "' rel='external'>" . $socialNetwork->title . "</a></li>";
+								echo "<li class='" . $socialNetwork->css_class . "'><a href='" . $socialNetwork->url . "' rel='external'>" . $socialNetwork->title . "</a></li>\n";
 								
 							}
 							
@@ -106,6 +105,14 @@ if (file_exists('./social-networks.json') && is_readable('./social-networks.json
 				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
+		</script>
+		
+		<script type='text/javascript'>
+			(function() {
+		    	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    	po.src = 'https://apis.google.com/js/plusone.js';
+		    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  	})();
 		</script>
 	
 	</body>
